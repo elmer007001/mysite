@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MyApp - Sign Up</title>
+<title>PAG-ASA Cooperative - Open an Account</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!--# include file="header.html" -->
 <main class="auth-wrap">
   <div class="auth-card">
-    <h2>Create Account</h2>
+    <h2>Open your account</h2>
+    <p class="auth-subtext">No minimums, no hidden fees &mdash; takes about two minutes.</p>
     <form action="#" method="post">
       <div class="form-group">
         <label for="name">Full Name</label>
@@ -20,6 +21,15 @@
         <input type="email" id="email" name="email" required placeholder="you@example.com">
       </div>
       <div class="form-group">
+        <label for="account-type">Account Type</label>
+        <select id="account-type" name="account-type">
+          <option value="investing">Individual Investing</option>
+          <option value="retirement">Retirement (IRA)</option>
+          <option value="savings">High-Yield Savings</option>
+          <option value="business">Business Banking</option>
+        </select>
+      </div>
+      <div class="form-group">
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required placeholder="********">
       </div>
@@ -27,7 +37,7 @@
         <label for="confirm">Confirm Password</label>
         <input type="password" id="confirm" name="confirm" required placeholder="********">
       </div>
-      <button type="submit">Sign Up</button>
+      <button type="submit">Open Account</button>
     </form>
     <p class="auth-footer-text">Already have an account? <a href="signin.html">Sign in</a></p>
   </div>
