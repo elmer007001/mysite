@@ -1,4 +1,73 @@
 * { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Arial, Helvetica, sans-serif; background:#f4f6f8; color:#1f2937; }
+.container { max-width:1100px; margin:0 auto; padding:0 20px; }
+
+/* Header */
+.site-header { background:#ffffff; border-bottom:1px solid #e5e7eb; }
+.site-header .container { display:flex; align-items:center; justify-content:space-between; height:64px; }
+.site-header .logo { display:flex; align-items:center; gap:8px; color:#1f2937; font-size:1.4rem; font-weight:bold; text-decoration:none; }
+.site-header .logo-img { width:32px; height:32px; border-radius:50%; object-fit:cover; }
+.site-header nav ul { list-style:none; display:flex; gap:24px; }
+.site-header nav a { color:#6b7280; text-decoration:none; font-weight:500; }
+.site-header nav a:hover, .site-header nav a.active { color:#1f2937; }
+.header-actions { display:flex; align-items:center; gap:20px; }
+.header-actions .phone { color:#6b7280; text-decoration:none; font-size:.9rem; }
+
+/* Buttons */
+.btn { display:inline-block; padding:12px 28px; border-radius:6px; text-decoration:none; font-weight:600; border:none; cursor:pointer; }
+.btn-accent { background:#6d4c63; color:#fff; }
+.btn-accent:hover { background:#58394f; }
+
+/* Hero color blocks */
+.blocks { display:flex; flex-wrap:wrap; }
+.block { flex:1 1 320px; padding:80px 40px; text-align:center; color:#fff; }
+.block-slate { background:#8b95a3; }
+.block-dark { background:#141a2b; }
+.block-icon { margin-bottom:20px; }
+.block-icon svg { width:56px; height:56px; fill:#fff; }
+.block h2 { font-size:1.8rem; margin-bottom:16px; }
+.block p { max-width:420px; margin:0 auto 24px; line-height:1.6; opacity:.9; }
+
+/* Category grid */
+.categories { padding:60px 0; background:#fff; }
+.categories h2 { text-align:center; margin-bottom:32px; font-size:1.6rem; color:#1f2937; }
+.category-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:20px; }
+.category-card { text-decoration:none; display:block; text-align:center; }
+.category-card img { width:100%; height:140px; object-fit:cover; border-radius:8px; margin-bottom:10px; }
+.category-label { display:inline-block; background:#8b95a3; color:#fff; padding:6px 16px; border-radius:20px; font-size:.9rem; font-weight:600; }
+
+/* Legacy hero (kept for compatibility) */
+.hero { padding:80px 0; text-align:center; }
+.hero h1 { font-size:2.4rem; margin-bottom:16px; }
+.hero p { color:#555; margin-bottom:24px; }
+
+/* Auth pages */
+.auth-wrap { display:flex; justify-content:center; padding:60px 20px; }
+.auth-card { background:#fff; padding:40px; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.08); width:100%; max-width:400px; }
+.auth-card h2 { margin-bottom:24px; text-align:center; }
+.form-group { margin-bottom:18px; }
+.form-group label { display:block; margin-bottom:6px; font-weight:600; font-size:.9rem; }
+.form-group input { width:100%; padding:10px 12px; border:1px solid #d1d5db; border-radius:6px; font-size:1rem; }
+.form-group input:focus { outline:2px solid #6d4c63; }
+.auth-card button { width:100%; padding:12px; background:#6d4c63; color:#fff; border:none; border-radius:6px; font-size:1rem; font-weight:600; cursor:pointer; }
+.auth-card button:hover { background:#58394f; }
+.auth-footer-text { text-align:center; margin-top:18px; font-size:.9rem; color:#555; }
+.auth-footer-text a { color:#6d4c63; text-decoration:none; }
+
+/* Footer */
+.site-footer { background:#141a2b; color:#cbd5e1; padding:60px 0 20px; margin-top:40px; }
+.footer-grid { display:flex; flex-wrap:wrap; gap:40px; padding-bottom:40px; }
+.footer-col { flex:1 1 200px; }
+.footer-col h4 { color:#fff; margin-bottom:16px; }
+.footer-col ul { list-style:none; }
+.footer-col li { margin-bottom:8px; }
+.footer-col a { color:#cbd5e1; text-decoration:none; }
+.footer-col a:hover { color:#fff; }
+.footer-col p { line-height:1.6; font-size:.95rem; }
+.social-links { display:flex; gap:12px; list-style:none; }
+.social-links a { display:flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; background:#fff; color:#141a2b; font-weight:700; text-decoration:none; }
+.footer-copy { text-align:center; padding-top:20px; border-top:1px solid rgba(255,255,255,.1); color:#94a3b8; font-size:.85rem; }
+* { box-sizing: border-box; margin:0; padding:0; }
 body { font-family: Arial, Helvetica, sans-serif; background:#f4f6f8; color:#222; }
 .container { max-width:1100px; margin:0 auto; padding:0 20px; }
 .site-header { background:#1f2937; color:#fff; }
