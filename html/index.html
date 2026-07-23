@@ -8,14 +8,56 @@
 <body>
 <!--# include file="header.html" -->
 <main>
-  <section class="hero">
+  <section class="blocks">
+    <div class="block block-slate">
+      <div class="block-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+      </div>
+      <h2>Built for growing teams</h2>
+      <p>MyApp gives you a clean, secure starting point so you can onboard members and manage accounts with confidence, without extra setup.</p>
+      <a href="signup.html" class="btn btn-accent">Get Started</a>
+    </div>
+    <div class="block block-dark">
+      <div class="block-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7l9-5zm0 2.2L5 8v8l7 3.8 7-3.8V8l-7-3.8z"/></svg>
+      </div>
+      <h2>Simple by design</h2>
+      <p>A straightforward sign in and sign up flow, styled consistently across every page, so returning members always feel at home.</p>
+      <a href="signin.html" class="btn btn-accent">Sign In</a>
+    </div>
+  </section>
+  <section class="categories">
     <div class="container">
-      <h1>Welcome to MyApp</h1>
-      <p>A simple demo site with header, sign in and sign up pages, served by nginx in Docker.</p>
-      <a href="signup.html" class="btn">Get Started</a>
+      <h2>Browse by category</h2>
+      <div class="category-grid">
+        <a href="#" class="category-card">
+          <img src="assets/images/furniture.jpg" alt="Furniture">
+          <span class="category-label">Furniture</span>
+        </a>
+        <a href="#" class="category-card">
+          <img src="assets/images/clothes.jpg" alt="Clothes">
+          <span class="category-label">Clothes</span>
+        </a>
+        <a href="#" class="category-card">
+          <img src="assets/images/books.jpg" alt="Books">
+          <span class="category-label">Books</span>
+        </a>
+        <a href="#" class="category-card">
+          <img src="assets/images/essential-oils.jpg" alt="Essential oils">
+          <span class="category-label">Essential oils</span>
+        </a>
+        <a href="#" class="category-card">
+          <img src="assets/images/service.jpg" alt="Service">
+          <span class="category-label">Service</span>
+        </a>
+        <a href="#" class="category-card">
+          <img src="assets/images/multimedia.jpg" alt="Multimedia">
+          <span class="category-label">Multimedia</span>
+        </a>
+      </div>
     </div>
   </section>
 </main>
-<footer class="site-footer">&copy; 2026 MyApp. All rights reserved.</footer>
+<!--#include file="footer.html" -->
 </body>
 </html>
